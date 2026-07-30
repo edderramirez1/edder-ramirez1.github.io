@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoCenter | Venta de Vehículos y Servicios</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#111827;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+header h1{
+color:#fff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:600px;
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero div{
+background:rgba(0,0,0,.55);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff6600;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+section{
+padding:70px 8%;
+}
+
+.titulo{
+text-align:center;
+margin-bottom:50px;
+font-size:35px;
+color:#111827;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px;
+}
+
+.precio{
+padding:15px;
+color:#ff6600;
+font-size:22px;
+font-weight:bold;
+}
+
+.servicio{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.servicio h3{
+margin-bottom:15px;
+}
+
+.taller{
+background:white;
+padding:25px;
+border-left:6px solid #ff6600;
+margin-bottom:20px;
+}
+
+.contacto{
+background:#111827;
+color:white;
+}
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#ff6600;
+color:white;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:black;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🚗 AutoCenter</h1>
+
+<nav>
+
+<a href="#autos">Vehículos</a>
+
+<a href="#servicios">Servicios</a>
+
+<a href="#repuestos">Repuestos</a>
+
+<a href="#talleres">Talleres</a>
+
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Encuentra el vehículo ideal</h2>
+
+<p>Venta de carros nuevos, usados, repuestos y servicios automotrices.</p>
+
+<a href="#autos" class="btn">Ver Catálogo</a>
+
+</div>
+
+</section>
+
+<section id="autos">
+
+<h2 class="titulo">Vehículos Destacados</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+
+<h3>Toyota Corolla 2024</h3>
+
+<p>Motor 2.0 • Automático • Full Equipo</p>
+
+<div class="precio">$24,500</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341">
+
+<h3>Honda Civic 2024</h3>
+
+<p>Motor 2.0 • Deportivo</p>
+
+<div class="precio">$28,000</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+
+<h3>Ford Mustang GT</h3>
+
+<p>Motor V8 • Deportivo</p>
+
+<div class="precio">$55,000</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicios">
+
+<h2 class="titulo">Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="servicio">
+
+<h3>🚗 Venta de Vehículos</h3>
+
+<p>Vehículos nuevos y seminuevos certificados.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>💳 Financiamiento</h3>
+
+<p>Créditos rápidos y cuotas accesibles.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>🛠 Taller Mecánico</h3>
+
+<p>Mantenimiento preventivo y correctivo.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>🛡 Seguros</h3>
+
+<p>Protección completa para tu vehículo.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="repuestos">
+
+<h2 class="titulo">Venta de Repuestos</h2>
+
+<div class="grid">
+
+<div class="servicio">
+
+<h3>🔋 Baterías</h3>
+
+<p>Originales y de alto rendimiento.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>🛞 Llantas</h3>
+
+<p>Michelin, Bridgestone, Goodyear.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>🛢 Aceites</h3>
+
+<p>Sintéticos y minerales.</p>
+
+</div>
+
+<div class="servicio">
+
+<h3>⚙ Frenos y Suspensión</h3>
+
+<p>Repuestos originales para todas las marcas.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="talleres">
+
+<h2 class="titulo">Ubicación de Nuestros Talleres</h2>
+
+<div class="taller">
+
+<h3>📍 Taller Central</h3>
+
+<p>Av. Principal #123, Ciudad</p>
+
+<p>Horario: Lunes a Sábado 8:00 AM - 6:00 PM</p>
+
+</div>
+
+<div class="taller">
+
+<h3>📍 Taller Norte</h3>
+
+<p>Bulevar Industrial #45</p>
+
+<p>Horario: Lunes a Domingo 8:00 AM - 8:00 PM</p>
+
+</div>
+
+<div class="taller">
+
+<h3>📍 Taller Sur</h3>
+
+<p>Calle 10 Zona Comercial</p>
+
+<p>Servicio de mecánica, pintura y diagnóstico.</p>
+
+</div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+<h2 class="titulo" style="color:white;">Contáctanos</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo">
+
+<input type="tel" placeholder="Teléfono">
+
+<textarea rows="6" placeholder="Escribe tu mensaje"></textarea>
+
+<button>Enviar Consulta</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>AutoCenter © 2026</h3>
+
+<p>Venta de vehículos • Talleres • Repuestos • Financiamiento</p>
+
+</footer>
+
+</body>
+</html>
